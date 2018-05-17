@@ -1,6 +1,6 @@
 def connect():
     import network
-    from secret import wlan_ssid, wlan_pass
+    from config import wlan_ssid, wlan_pass
     sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
         print('connecting to ' + wlan_ssid)
